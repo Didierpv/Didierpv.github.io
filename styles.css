@@ -10,7 +10,7 @@
 }
 :root{
     --colorPrimary: #A8C7FA;
-    --colorSecondary: #d3c02c;
+    --colorSecondary: #ffe100;
     --text-white: #f2f2f2;
     --text-black: #121314;
 }
@@ -72,6 +72,7 @@ header {
     height: 100dvh;
     max-height: 100dvh;
     width: 100%;
+    
 
 }
 .navbar {
@@ -83,6 +84,16 @@ header {
     position: fixed;
     backdrop-filter: blur(12px);
     z-index: 100;
+    animation: slideDown 0.8s ease-in;
+
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 nav {
     
@@ -97,6 +108,7 @@ nav {
     color: #fff;
     width: 110px;
     text-align: center;
+    font-weight: 500;
     
 
 }
@@ -107,7 +119,9 @@ nav {
     border: none
 }
 .btn-2 {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 12px 16px;
     border-radius: 8px;
     background-color: var(--colorSecondary);
@@ -121,7 +135,7 @@ nav {
     text-align: center;
 }
 .btn-2:hover {
-    background-color: #ffc800;
+    background-color: var(--colorPrimary);
     font-size: 1.1rem ;
     padding: 8px 16px;
 }
@@ -139,7 +153,21 @@ nav {
     align-items: space-between;
     gap: 1rem;
     width: 100%;
+    animation: fadeIn 1.2s ease-in-out ;
+
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 h1 {
     display: flex;
     flex-direction: column;
@@ -162,7 +190,19 @@ h1 span {
     justify-content: center;
     gap: 1rem;
     width: 100%;
+    animation: fadeIn2 1.2s ease-in-out ;
 }
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .content-info-der p{
     display: flex;
     flex-direction: column;
@@ -188,10 +228,22 @@ h2 {
     width: 100%;
     height: 100%;
    justify-content: center;
+   animation: scaleimg 0.8s ease-in ;
 }
+@keyframes scaleimg {
+    from {
+        opacity: 1;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .content-image img {
     width: auto;
-    max-height: 550px;
+    max-height: 600px;
     transition: transform 0.3s ease-in-out; /* <- aquí */
 }
 
@@ -571,7 +623,7 @@ h6 {
         font-size: 0.8rem;
     }
     .derecho-notarial-info{
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 1rem;
         gap: 2rem;
         
@@ -612,7 +664,7 @@ h6 {
         font-size: 0.8rem;
     }
     .derecho-civil-info{
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 1rem;
         gap: 2rem;
         
