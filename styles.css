@@ -10,14 +10,17 @@
 }
 :root{
     --colorPrimary: #A8C7FA;
+    --colorSecondary: #d3c02c;
+    --text-white: #f2f2f2;
+    --text-black: #121314;
 }
 html {
-    color: #fff;
+    
     background: linear-gradient(108deg, #070916 3.13%, #181C39 49.63%, #101428 96.13%);
     scroll-behavior: smooth;
 }
 body {
-    color: #fff;
+    color: var(--text-white);
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
     position: relative;
@@ -31,7 +34,7 @@ svg{
     max-width: 24px;
 }
 
-.logo p{
+.logo a{
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--colorPrimary);
@@ -43,8 +46,11 @@ ul {
     gap: 3rem;
     text-decoration: none;
 }
+nav ul li a{
+    color: var(--text-white);
+}
 nav ul li a:hover {
-    color: var(--colorPrimary);
+    color: var(--colorSecondary);
     transition: 0.2s ease-in-out;
 }
 
@@ -86,7 +92,7 @@ nav {
     border-radius: 4px;
     border: 2px solid #fff;
     color: #fff;
-    width: 100px;
+    width: 110px;
     text-align: center;
     
 
@@ -100,10 +106,10 @@ nav {
 .btn-2 {
     
     padding: 12px 16px;
-    border-radius: 4px;
-    background-color: #6e91f9;
-    color: #070916;
-    width: 200px;
+    border-radius: 8px;
+    background-color: var(--colorSecondary);
+    color: var(--text-black);
+    width: 250px;
     height: 50px;
     text-align: center;
     font-weight: 600;
@@ -112,7 +118,7 @@ nav {
     text-align: center;
 }
 .btn-2:hover {
-    background-color: #A8C7FA;
+    background-color: #ffc800;
     font-size: 1.3rem ;
     padding: 8px 16px;
 }
@@ -314,8 +320,183 @@ h2 {
 
 
 
+.tutela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    gap: 1rem;
+}
+.tutela-info{
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    margin-top: 4rem;
+
+}
 
 
+.tutela-info ul{
+    display: flex;
+    width: 100%;
+    gap: 4rem;
+}
+.tutela-info ul li{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: #A8C7FA20;
+    border-radius: 8px;
+    
+    width: 100%;
+}
+
+.tutela-info ul li:hover{
+    background-color: #A8C7FA40;
+    transition: 0.2s ease-in-out;
+    }
+.tutela-info ul li img{
+    width:100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    
+}
+.tutela-info ul li span{
+    width:100%;
+    height: auto;
+    padding: 1.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    background-color: #293043;
+    padding: 2rem;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: var(--text-white);
+    font-weight: 300;
+    text-align: center;
+
+}
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+}
+.footer-text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: var(--text-white);
+    height: auto;
+    width: 100%;
+}
+
+.footer-text-info p {
+    text-align: start;
+    font-size: 0.9rem;
+    max-width: 700px;
+}
+.other-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 0.3rem;
+    width: 100%;
+    height: auto;
+}
+
+.other-media p {
+    font-size: 0.8rem;
+    
+}
+h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+h6 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+.social-media{
+    display: flex;
+    gap: 1rem;
+    height: 24px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 0.3rem;
+    width: 100%;
+    height: auto;
+}
+.contact p{
+    text-align: end;
+    font-size: 1rem;
+}
+.conntact p a{
+    color: var(--text-white);
+    
+}
+.conntact p a:hover{
+    color: var(--acent-color);
+    
+}
+.contact a{
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 300;
+}
+.contact a:hover{
+    color: var(--acent-color);
+    
+}
+.all-rights{
+    display: flex;
+    gap: 0.3rem;
+}
+.all-rights a{
+    font-size: 0.8rem;
+}
+.all-rights a:hover{
+    font-weight: 300;
+    color: #0d82e9;
+}
+.whatsapp-btn{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
 
 
 
@@ -399,6 +580,26 @@ h2 {
     }
 
 
+    .tutela{
+        padding: 2rem;
+    }
+    .tutela p{
+        font-size: 0.8rem;
+    }
+    .tutela-info{
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+        gap: 2rem;
+        
+    }
+    .tutela-info li{
+        font-size: 0.8rem;
+    }
+    .tutela-info ul{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
 
  .derecho-civil{
         padding: 2rem;
@@ -416,8 +617,52 @@ h2 {
         font-size: 0.8rem;
     }
 
-
+    footer {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+    }
+    .footer-text-info {
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+    .footer-text-info p {
+        text-align: center;
+        max-width: 100%;
+    }
+    .other-media{
+        align-items: center;
+        text-align: center;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .all-rights p{
+        font-size: 0.7rem;
+    }
+    .all-rights a{
+        font-size: 0.7rem;
+    }   
+    h5, h6 {
+        text-align: center;
+    }
+    .best-projects{
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    flex-direction: column;
 }
+}
+
 @media (max-width: 500px) {
     h1 {
         font-size: 2rem;
