@@ -40,6 +40,9 @@ svg{
     color: var(--colorPrimary);
     width: 100px;
 }
+.logo a:hover{
+    color: var(--colorSecondary);
+}
 
 ul {
     display: inline-flex;
