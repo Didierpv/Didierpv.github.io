@@ -16,7 +16,7 @@
 }
 html {
     
-    background: linear-gradient(108deg, #070916 3.13%, #181C39 49.63%, #101428 96.13%);
+    background: linear-gradient(108deg, #070916 3.13%, #2b315e 49.63%, #101428 96.13%);
     scroll-behavior: smooth;
 }
 body {
@@ -115,14 +115,14 @@ nav {
     width: 250px;
     height: 50px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     transition: 0.2s ease-in;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
 }
 .btn-2:hover {
     background-color: #ffc800;
-    font-size: 1.3rem ;
+    font-size: 1.1rem ;
     padding: 8px 16px;
 }
 .content-header {
@@ -366,8 +366,9 @@ h2 {
     }
 .tutela-info ul li img{
     width:100%;
-    height: auto;
+    height: 100%;
     border-radius: 8px 8px 0 0;
+    object-fit: cover;
     
 }
 .tutela-info ul li span{
@@ -380,14 +381,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    background-color: #293043;
+  border-top: 4px solid var(--colorPrimary);
     padding: 2rem;
     text-align: center;
     justify-content: space-between;
     width: 100%;
     height: auto;
     gap: 1rem;
-    
+    background: linear-gradient(108deg, #070916 3.13%, #2b315e 49.63%, #101428 96.13%);
 }
 
 footer p {
@@ -481,7 +482,7 @@ h6 {
     font-weight: 300;
 }
 .contact a:hover{
-    color: var(--acent-color);
+    color: var(--colorPrimary);
     
 }
 .all-rights{
@@ -492,8 +493,8 @@ h6 {
     font-size: 0.8rem;
 }
 .all-rights a:hover{
-    font-weight: 300;
-    color: #0d82e9;
+    
+    color: var(--colorPrimary);
 }
 .whatsapp-btn{
     position: fixed;
@@ -670,9 +671,10 @@ h6 {
     h1 {
         font-size: 2rem;
     }
+ 
     h2{
         font-size: 1.5rem;
-        text-align: left;
+        text-align: center;
     }
     .video video{
         width: 100%;
@@ -681,7 +683,7 @@ h6 {
         width: 100%;
     }
     .derecho-notarial{
-        align-items: start;
+        align-items: center;
     }
     .derecho-admin-info ul li{
    
